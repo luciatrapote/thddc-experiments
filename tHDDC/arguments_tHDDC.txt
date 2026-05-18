@@ -1,0 +1,57 @@
+Arguments of the main function
+------------------------------
+
+X:
+    Data matrix of size n x p, where rows correspond to observations
+    and columns to variables.
+
+q:
+    Vector containing the intrinsic dimensions of each cluster.
+
+alpha:
+    Trimming proportion used to provide robustness against outliers.
+
+nstart:
+    Number of random initializations.
+
+cstep1:
+    Number of concentration steps during the first initialization stage.
+
+cstep2:
+    Number of concentration steps during the refinement stage.
+
+nkeep:
+    Number of best solutions retained after initialization.
+
+equal.weights:
+    If TRUE, all clusters are forced to have equal mixing proportions.
+
+restr.fact:
+    Vector containing the eigenvalue restriction factors c1 and c2
+    used to avoid spurious solutions.
+
+zero.tol:
+    Numerical tolerance used for numerical stability.
+
+trace:
+    Controls the verbosity level of the algorithm.
+
+opt:
+    Classification mode. Possible values:
+        "HARD" -> hard assignment (classification trimmed likelihood)
+        "MIXT" -> mixture assignment (mixture trimmed likelihood)
+
+sol_ini_p:
+    Logical value indicating whether a user-provided initial solution is used.
+
+sol_ini:
+    User-provided initial partition.
+
+catell_Y:
+    If TRUE, the Cattell criterion is used to estimate the intrinsic dimensions.
+
+catell_threshold:
+    Threshold associated with the Cattell criterion.
+
+dim_max:
+    Maximum allowed intrinsic dimension.
